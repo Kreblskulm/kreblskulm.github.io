@@ -136,9 +136,13 @@ strong {
         padding-right: 50px !important;
     }
 
+    .title {
+        margin: auto !important;
+        padding: 10vw;
+    }
+
     .img-title {
-        width: 10% !important;
-        padding: 0px;
+        display: none;
     }
 
   
