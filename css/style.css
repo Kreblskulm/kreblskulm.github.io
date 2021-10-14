@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400&display=swap');
 
 /* Content */
 body {
-    background-color: #2c2f33 !important;
+    background-color: #33302f !important;
     color: #c4c4c4 !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Fira Sans Condensed', sans-serif !important;
 }
 
 .content {
@@ -17,7 +17,7 @@ body {
 /* Header */
 
 .header {
-    background-color: #23272a !important;
+    background-color: #2b2928 !important;
     width: 100%;
     padding: 1.5vw;
     margin: auto !important;
@@ -44,7 +44,7 @@ body {
 /* Text classes */
 
 h1 {
-    color: #ffff84;
+    color: #fbb86c;
     font-size: 4vh !important;
     margin-bottom: 2vw !important;
 }
@@ -52,25 +52,25 @@ h1 {
 p{
     color: #c4c4c4;
     font-size: 2.5vh !important;
-    margin-bottom: 2vw !important;
+    margin-bottom: 1.2vw !important;
 }
 
 a {
     position: relative;
-    color: #ffff84 !important;
+    color: #fbb86c !important;
     text-decoration: none !important;
     transition: 0.3s;
   }
   
   a:hover {
-    color: #ffff84 !important;
+    color: #fbb86c !important;
     opacity: 0.7;
     transition: 0.3s;
     text-decoration: underline !important;
   }
 
 h2 {
-    color: #ffff84;
+    color: #fbb86c;
     font-size: 3.2vh !important;
     margin-bottom: 2vw !important;
     margin-top: 2vw !important; 
@@ -85,18 +85,18 @@ h6 {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
     opacity: 0.7;
-    color: #ffff84;
+    color: #fbb86c;
 }
 
 code {
-    background-color: #23272A;
+    background-color: #2b2928;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(78, 78, 78);
     padding: 4px;
     margin: auto;
-    color: #ffff84 !important;
+    color: #fbb86c !important;
 }
 
 strong {
