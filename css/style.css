@@ -1,32 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Content */
 body {
-    background-color: #33302f !important;
+    background-color: #2d2d2d !important;
     color: #c4c4c4 !important;
-    font-family: 'Fira Sans Condensed', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .content {
+    background-color: #282828;
+    border-radius: 16px;
     margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
     width: 50vw;
     padding: 10px;
     margin: auto;
+    border-style: solid;
+    border-color: #3c3c3c;
+    border-width: 1px;
 }
-/* Header */
 
-.header {
-    background-color: #2b2928 !important;
-    width: 100%;
-    padding: 1.5vw;
-    margin: auto !important;
+/* Navbar */
+
+#navibar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282828;
+    padding: 5px;   
+}
+
+#naviitem {
+    float: left;
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+#naviitem a {
+    display: block; 
+    color: white !important;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none !important;
 }
 
-.img-title {
-    width: 8% !important;
-    padding: 10px;
+#naviitem a:hover {
+    background-color: #3c3c3c;
+    border-radius: 5px;
+    text-decoration: none !important;
+    color: white;
+    opacity: 0.7;
 }
+  
+  .active {
+      background-color: #3c3c3c;
+      border-radius: 5px;
+      text-decoration: none !important;
+  }
 
 /* Menu */
 
@@ -46,6 +77,11 @@ h1 {
     color: #fbb86c;
     font-size: 4vh !important;
     margin-bottom: 2vw !important;
+}
+
+li {
+    font-size: 2.5vh !important;
+    margin-bottom: 10px !important;
 }
 
 p{
@@ -75,10 +111,6 @@ h2 {
     margin-top: 2vw !important; 
 }
 
-li {
-    font-size: 2.5vh !important;
-    margin-bottom: 10px !important;
-}
 
 h6 {
     margin-top: 30px !important;
@@ -130,19 +162,18 @@ strong {
     }
     
     .content {
-        width: 100%;
+        width: 98%;
         padding-left: 50px !important;
         padding-right: 50px !important;
+        border-width: 3px !important;
     }
 
     .title {
-        margin: auto !important;
-        padding: 10vw;
-    }
-
-    .img-title {
         display: none;
     }
 
+    #naviitem {
+        font-size: 2.5vh !important;
+    }
   
 }
