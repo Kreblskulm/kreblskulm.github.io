@@ -116,6 +116,10 @@ code {
         font-size: 2.5vh !important;
         margin-bottom: 3vh !important;
     }
+
+    li {
+        font-size: 2.5vh !important;
+    }
     
     h6 {
         font-size: 1.7vh !important;
@@ -127,7 +131,6 @@ code {
         width: 98%;
         padding-left: 50px !important;
         padding-right: 50px !important;
-        border-width: 3px !important;
     }
 
     .title {
