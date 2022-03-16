@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <!-- Website title, description and favicon -->
-        <title>The Ubuntu handbook | MrBeeBenson</title>
-        <meta name="description" content="Sometimes Linux for new users can seem uninviting, daunting and confusing. It looks really complicated from an outsiders perspective and so people may feel put off by it, however I am here to attempt to make Linux seem less daunting. I recommend that you use Ubuntu if you wish to follow this guide since the guide was written with new Ubuntu users in mind.">
-        <meta name="author" content="MrBeeBenson">
-        <meta content="Open-Source, foss, coding, programming, linux, projects, dev group, group, organisation, free, open source, software" name="keywords">
-        <link rel="shortcut icon" type="image/png" href="../assets/favicon.png" />
-        <meta content="#fbb86c" data-react-helmet="true" name="theme-color" />
-        <!-- CSS and JavaScript -->
-        <link href="../css/style.css" rel="stylesheet">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MrBeeBenson</title>
+    <meta name="description" content="Sometimes Linux for new users can seem uninviting, daunting and confusing. It looks really complicated from an outsiders perspective and so people may feel put off by it, however I am here to attempt to make Linux seem less daunting. I recommend that you use Ubuntu if you wish to follow this guide since the guide was written with new Ubuntu users in mind.">
+    <meta name="author" content="MrBeeBenson">
+    <meta content="Open-Source, foss, coding, programming, linux, projects, dev group, group, organisation, free, open source, software, youtube" name="keywords">
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png" />
+    <meta content="#fbb86c" data-react-helmet="true" name="theme-color" />
+    <!-- CSS and JavaScript -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
 <body>
 <!-- Navbar -->
 <ul id="navibar">
-  <li id="naviitem" style="float:right"><a href="https://github.com/mrbeebenson">GitHub</a></li>
-  <li id="naviitem" style="float:right"><a href="https://mrbeebenson.github.io/rocks">Rocks</a></li>
-  <li id="naviitem" style="float:right"><a class="active" href="#">Blogs</a></li>
-  <li id="naviitem" style="float:right"><a href="https://mrbeebenson.github.io">Home</a></li>
-  <li class="title" id="naviitem"><a href="https://mrbeebenson.github.io">MrBeeBenson's site</a></li>
+  <li id="naviitem"><a href="https://github.com/mrbeebenson"><h4>GitHub</h4></a></li>
+  <li id="naviitem"><a href="https://mrbeebenson.github.io/contact"><h4>Contact</h4></a></li>
+  <li id="naviitem"><a href="https://mrbeebenson.github.io/rocks"><h4>Rocks</h4></a></li>
+  <li id="naviitem"><a href="https://mrbeebenson.github.io/projects"><h4>Projects</h4></a></li>
+  <li id="naviitem"><a href="https://mrbeebenson.github.io/blogs"><h4>Blogs</h4></a></li>
+  <li id="naviitem"><a href="https://mrbeebenson.github.io"><h4>Home</h4></a></li>
 </ul>
 <div class="content">
+<div class="title">
+<center><h1>MrBeeBenson</h1></center>
+</div>
+<center><p id="splash">"[MrBeeBenson ~]$ cd /home/mrbeebenson █"</p></center>
 <h1>The Ubuntu handbook - 22/05/21</h1>
 <p>Sometimes Linux for new users can seem uninviting, daunting and confusing. It looks really complicated from an outsiders perspective and so people may feel put off by it, however I am here to attempt to make Linux seem less daunting. I recommend that you use Ubuntu if you wish to follow this guide since the guide was written with new Ubuntu users in mind.</p>
 <h2>What is Linux?</h2>
@@ -51,16 +52,29 @@
 <ul>
 <li>How to search for a package in the repositories:</li>
 </ul>
-<p><code>apt search [package-name]</code> - This will search for a package with this name. Example: <code>apt search firefox</code></p>
+<p><code>apt search [package-name]</code></p>
 <ul>
-<li>How to install a package:</li>
+<li>
+<p>This will search for a package with this name. Example: <code>apt search firefox</code></p>
+</li>
+<li>
+<p>How to install a package:</p>
+</li>
 </ul>
-<p><code>sudo apt install [package-name]</code> - This will install an application with this name. Example <code>sudo apt install firefox</code></p>
+<p><code>sudo apt install [package-name]</code></p>
 <ul>
-<li>How to uninstall a package:</li>
+<li>
+<p>This will install an application with this name. Example <code>sudo apt install firefox</code></p>
+</li>
+<li>
+<p>How to uninstall a package:</p>
+</li>
 </ul>
-<p><code>sudo apt remove [package-name]</code> - This will remove an application with this name. Example <code>sudo apt remove firefox</code></p>
+<p><code>sudo apt remove [package-name]</code></p>
 <ul>
+<li>
+<p>This will remove an application with this name. Example <code>sudo apt remove firefox</code></p>
+</li>
 <li>
 <p>Packages come with something called dependencies. Normally during installation of a package, dependencies are installed along with an application, however when you remove a package, you need to run an additional command, <code>sudo apt autoremove</code>, to remove dependencies associated with that package.</p>
 </li>
@@ -69,11 +83,19 @@
 (Important side-note, when you are ever installing applications, or updating your updates, you will need to update your repositories first so that you get the latest updates from them.)</p>
 </li>
 </ul>
-<p><code>sudo apt update</code> - This will update your repositories</p>
+<p><code>sudo apt update</code></p>
 <ul>
-<li>How to upgrade packages:</li>
+<li>
+<p>This will update your repositories</p>
+</li>
+<li>
+<p>How to upgrade packages:</p>
+</li>
 </ul>
-<p><code>sudo apt upgrade</code> - This will update any packages which require updates.</p>
+<p><code>sudo apt upgrade</code></p>
+<ul>
+<li>This will update any packages which require updates.</li>
+</ul>
 <p>There are many wonderful commands which we have not covered here, however I recommend using a search engine such as DuckDuckGo or Google to find your answers.</p>
 <ul>
 <li><em>I also recommend trying &quot;apt moo&quot;</em></li>
@@ -83,9 +105,14 @@
 <ul>
 <li>Install Flatpak</li>
 </ul>
-<p><code>sudo apt install flatpak</code> - Installs flatpak.</p>
+<p><code>sudo apt install flatpak</code></p>
 <ul>
-<li>Add the Flathub repository</li>
+<li>
+<p>Installs flatpak.</p>
+</li>
+<li>
+<p>Add the Flathub repository</p>
+</li>
 </ul>
 <p><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</code> - Adds the Flathub repository to Flatpak.</p>
 <h2>How to install/remove/update Flatpak applications</h2>
@@ -93,19 +120,37 @@
 <ul>
 <li>How to search for applications:</li>
 </ul>
-<p><code>flatpak search [app-name]</code> - This will search for applications based on the app name you searched. Alternatively you can use <a href="https://flathub.org/home">this website</a>.</p>
+<p><code>flatpak search [app-name]</code></p>
 <ul>
-<li>How to install applications:</li>
+<li>
+<p>This will search for applications based on the app name you searched. Alternatively you can use <a href="https://flathub.org/home">this website</a>.</p>
+</li>
+<li>
+<p>How to install applications:</p>
+</li>
 </ul>
-<p><code>flatpak install [app-name]</code> - This will install an application from Flatpak.</p>
+<p><code>flatpak install [app-name]</code></p>
 <ul>
-<li>How to remove applications:</li>
+<li>
+<p>This will install an application from Flatpak.</p>
+</li>
+<li>
+<p>How to remove applications:</p>
+</li>
 </ul>
-<p><code>flatpak remove [app-name]</code> - This will remove an application that was installed from Flatpak.</p>
+<p><code>flatpak remove [app-name]</code></p>
 <ul>
-<li>How to update applications:</li>
+<li>
+<p>This will remove an application that was installed from Flatpak.</p>
+</li>
+<li>
+<p>How to update applications:</p>
+</li>
 </ul>
-<p><code>flatpak update</code> - This will update applications from Flatpak.</p>
+<p><code>flatpak update</code></p>
+<ul>
+<li>This will update applications from Flatpak.</li>
+</ul>
 <h2>Installing the default GNOME Desktop Environment</h2>
 <p>By default Ubuntu comes with a modified version of the GNOME Desktop Environment, however many people prefer the standard GNOME desktop environment as it looks more modern and fluid. To install this desktop environment you will need to enter into your terminal:</p>
 <p><code>sudo apt install gnome-session &amp;&amp; gnome-tweaks</code></p>
@@ -117,18 +162,18 @@
 <p>This will now install the default GNOME session on Ubuntu!</p>
 <h2>Conclusion</h2>
 <p>Despite being complicated at first, I personally feel like Linux - while initially seeming daunting - can be a very friendly and inviting operating system if newcomers are given the right guidance. This quick-start guide was intended to help people learn how to use Linux by starting them on a fairly simple Ubuntu installation, and teaching them how to install, remove, update packages as well as install desktop environments.</p>
-</div>
-<div class="content">
+<hr />
 <h1>Sources</h1>
 <ul>
 <li><a href="https://flatpak.org/setup/Ubuntu/">Flathub.org - Flatpak setup</a></li>
 </ul>
-</div>
-<div class="content">
-<h1>Edits</h1>
+<h1>Edits:</h1>
 <ul>
 <li>Released post - (22/05/21)</li>
+<li>Minor tweaks to the layout to accomodate site redesign (16/03/22)</li>
 </ul>
+<hr />
+<h3>Made with &lt;3 by MrBeeBenson</h3>
 </div>
 </body>
 </html>
